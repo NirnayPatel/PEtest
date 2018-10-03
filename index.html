@@ -4,11 +4,16 @@
 		<h1 align="center"></h1>
 		<p align="center"><textarea id="test" class="perfecttense" style="width: 500px; height: 500px; "></textarea>
 </p>
-
+<div id="printFollower"></div>
 
 <script src="https://unpkg.com/perfecttense-editor/dist/pte.umd.js"></script>
 <script>
   PerfectTenseEditor({ clientId: "5b5b9895dc67be725e242b33", clientSecret: "8cdkmlajk4jke69" });
 </script>
+<script>
+function printFollowers(followersSum) {
+  document.getElementById('printFollower').innerHTML = followersSum;
+  console.log(followersSum); // you can do print followersSum wherever you want
+		}</script>
 	</body>
 </html>
